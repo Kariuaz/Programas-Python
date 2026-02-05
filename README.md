@@ -4,11 +4,11 @@ Computacion aplicada
 ## Actividad 1
 ### Actividad 2
 #### Actividad 3
--p001-hola-mundo.py
--p002-area-circulo.py
--p003-area-triangulo.py
--p004-paga-trabajador.py
--p005-calculadora-imc.py
--p006-conversor-temperatura.py
--p007-entrada-multiple.py
--p008-entrada-con-espacio.py
+-P001-hola-mundo
+-P002-area-circulo
+-P003-area-triangulo
+-P004-paga-trabajador
+-P005-calculadora-imc
+-P006-conversor-temperatura
+-P007-entrada-multiple
+-P008-entrada-con-espacio
