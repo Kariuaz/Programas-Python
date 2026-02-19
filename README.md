@@ -41,10 +41,19 @@ Computacion aplicada
 -p027-calcular-paga-extra.py
 -p028-retira-cuenta.py
 -p029-calculadora-descuento.py
-##### Actividad 5
+###### Actividad 6
 p030-verifica-suma.py
 p031-2da-ley-de-newton.py
 p032-aceptar-estudiante.py
 p033-aceptar-estudiante-v2.py
 p034-tipo-angulo.py
 p035-tipo-triangulo.py
+###### Actividad 7
+p044-conteo-ascendente.py
+p045-conteo-ascendente-v2.py
+p046-conteo-descendente.py
+p047-conteo-descendente-v2.py
+p048-multiplos-continue.py
+p049-sumar-consecutivos.py
+p050-conteo-numeros.py
+p051-adivina-numero.py

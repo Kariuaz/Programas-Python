@@ -1,0 +1,23 @@
+#Lee y cuenta numeros hasta que se introduce 999
+
+print("\033[2J\033[H")
+print(" --Lee y cuenta numeros hasta que se introduce 999-- ")
+
+s = c = cp = cn = cz=  0
+
+
+while True:
+    num = int(input("Numero? "))
+    if num==999: break
+    c += 1
+    s += num
+    if num > 0 : cp += 1
+    elif num < 0 : cn += 1
+    else: cz += 1
+
+print("\nReporte final")
+print(f"Fueron: {c} numeros")
+print(f"Suma:   {s} ")
+print(f"Pos:   {cp} ")
+print(f"Neg:   {cn} ")
+print(f"Cer:   {cz} ")
