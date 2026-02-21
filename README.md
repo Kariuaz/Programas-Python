@@ -48,6 +48,15 @@ p032-aceptar-estudiante.py
 p033-aceptar-estudiante-v2.py
 p034-tipo-angulo.py
 p035-tipo-triangulo.py
+###### Tarea 2
+p036-numeros-consecutivos.py
+p037-numero-mayor.py
+p038-dia-semana.py
+p039-numeros-romanos.py
+p040-calculo-notas.py
+p041-aceptar-estudiante-v2
+p042-precio-entrada-cine.py
+p043-calculadora-anio-bisiesto.py
 ###### Actividad 7
 p044-conteo-ascendente.py
 p045-conteo-ascendente-v2.py
@@ -57,3 +66,4 @@ p048-multiplos-continue.py
 p049-sumar-consecutivos.py
 p050-conteo-numeros.py
 p051-adivina-numero.py
+
