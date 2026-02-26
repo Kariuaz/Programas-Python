@@ -73,4 +73,13 @@ p054-tabla-multiplicar-while-v1.py
 p055-tabla-multiplicar-while-v2.py
 p056-contador-vocales.py
 p057-interes-simple.py
-
+###### Actividad 9 
+Problema de repaso - Parcial 1
+##### Tarea 03
+p058-impares-ascendente.py
+p059-pares-descendente.py
+p060-promedio-suma.py
+p061-suma-200.py
+p062-conversion-temperaturas.py
+p063-numero-mayor.py
+p064-verificar-palindromo.py
