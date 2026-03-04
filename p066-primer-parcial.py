@@ -149,3 +149,36 @@ else:
     print("La función generó ganancias buenas.")
 
 print("\nProceso terminado.✔")
+
+"""
+Preguntas: Explica con tus palabras
+
+ Imagina que el cine decide implementar una promoción: los martes, todos los boletos de Adulto tendrán un 20% de descuento. 
+¿Qué cambios tendrías que hacer en tu código para agregar esta funcionalidad? 
+Menciona qué nueva pregunta le harías al usuario y en qué parte del código agregarías la nueva lógica.
+
+Seria necesario preguntarle qué día es, por ejemplo: “¿Qué día es hoy?” 
+Y la pregunta debe ir antes de calcular el precio del boleto, porque ahí es donde se decide cuánto va a pagar la persona, 
+antes de cuando el comprador ya eligió su tipo (E, A, TE, AC) y antes de que el programa sume el precio del boleto
+Cuando el comprador sea Adulto, el programa debe revisar si el día es martes.
+Si sí lo es, entonces el precio del adulto se reduce un 20%.
+
+
+2. Supongamos que, al probar tu programa, el "Total Recaudado en General" siempre te da un resultado incorrecto, 
+aunque los ingresos por cada tipo de comprador parecen correctos. 
+Describe, paso a paso, qué harías para encontrar el error. 
+¿En qué líneas específicas de tu código pondrías atención para verificar los valores y solucionar el problema?
+
+Primero me fijaría en cada parte donde se cobra un boleto, las líneas donde se suma al total general y la línea 
+donde se imprime el total recaudado en el reporte final.
+Si en uno de ellos solo sumas al tipo por ejemplo, solo a estudiantes, pero no al total general, ahí estaría el error.
+
+Tambien se pudiera revisar si en alguna parte se está restando al total general por error o se está reiniciando
+ el total a cero sin querer o algo que cambie el valor del total cuando ya debería estar sumando.
+
+Haría una prueba sencilla, por ejemplo:
+- 1 estudiante
+- 1 adulto
+Si el dinero por tipo está bien, pero el total no, eso confirma que el problema está en:
+Cómo se está sumando el total general o en qué variable se está usando al final.
+"""
