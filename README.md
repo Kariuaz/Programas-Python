@@ -85,3 +85,13 @@ p064-verificar-palindromo.py
 p065-Problema de repaso - Parcial 
 ###### Primer Examen Parcial
 p066-primer-parcial.py
+###### Actividad 10
+p067-conteo-ascendente-for.py
+p068-conteo-ascendente-for-v2.py
+p069-conteo-descendente-for.py
+p070-conteo-descendente-for-v2.py
+p071-arriba-abajo.py
+p072-suma-pares-impares.py
+p073-suma-promedio-numeros.py
+p074-suma-mutiplos.py
+p075-cifrado-cesar.py
