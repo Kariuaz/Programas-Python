@@ -129,3 +129,18 @@ p101-mes-día-nombre.py
 p102-listas-aleatorios-suma.py
 p103-ciudades.py
 p104-lista-impares.py
+###### Actividad 14
+p105-datos-estudiante.py
+p106-calificaciones-estudiante.py
+p107-nombres-edades.py
+p108-conversor-unidades.py
+p109-conversion-divisas.py
+p110-punto-de-venta.py
+###### Actividad 15
+p111-lote-autos.py
+p112-registro-estudiantes.py
+p113-reporte-ventas.py
+p114-area-figuras.py
+###### Actividad 16
+p121-municipios.py
+p122-operaciones-conjuntos.py
