@@ -151,3 +151,6 @@ p117-agregar-diccionario.py
 p118-eliminar-diccionario.py
 p119-procesar-diccionario.py
 p120-contar-caracteres.py
+###### Tarea 7
+p123-conjunto-personas.py
+p124-conjunt-numeros.py
