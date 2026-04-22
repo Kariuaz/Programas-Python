@@ -154,3 +154,5 @@ p120-contar-caracteres.py
 ###### Tarea 7
 p123-conjunto-personas.py
 p124-conjunt-numeros.py
+###### Segundo Examen Parcial
+p125-segundo-examen-parcial.py
