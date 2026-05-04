@@ -181,3 +181,16 @@ p145-mayores-promedio.py
 p146-pares-impares.py
 p147-aleatorios.py
 p148-nombres.py
+###### Tarea 8
+p149–numero-menor.py
+p150-dia-semana.py
+p151–medidas-longitud.py
+p152-suma-pares-impares.py
+p153-suma-digitos.py
+p154-calcula-factoriales.py
+p155-estadisticas-basicas.py
+###### Actividad 19
+p156-empleado1
+p157-empleado2
+p158-circulo
+p159-rectangulo
