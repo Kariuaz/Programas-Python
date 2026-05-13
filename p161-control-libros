@@ -1,0 +1,109 @@
+import os
+
+class Prestamo:
+    def __init__(self, titulo_libro, num_dias, tarifa_dia):
+        self.titulo_libro = titulo_libro
+        self.num_dias = num_dias
+        self.tarifa_dia = tarifa_dia
+        self.total = num_dias * tarifa_dia
+
+    def __str__(self):
+        return f' -> Libro: {self.titulo_libro:<25} Días: {self.num_dias:>3} Tarifa/Día: $ {self.tarifa_dia:>6.2f} Total: $ {self.total:>7.2f}'
+
+
+class Usuario:
+    def __init__(self, uid, nombre_usr, correo_usr, tel_usr):
+        self.uid = uid
+        self.nombre_usr = nombre_usr
+        self.correo_usr = correo_usr
+        self.tel_usr = tel_usr
+        self.lista_prestamos = list()
+
+    def agregarPrestamo(self, prestamo):
+        self.lista_prestamos.append(prestamo)
+
+    def totalTarifas(self):
+        total = 0
+        for prestamo in self.lista_prestamos:
+            total += prestamo.total
+        return total
+
+    def __str__(self):
+        return f'Usuario -> [Nombre: {self.nombre_usr} ID: {self.uid} Correo: {self.correo_usr} Tel: {self.tel_usr} ]'
+
+
+class Biblioteca:
+    def __init__(self, nombre_bib, direccion, encargado_bib):
+        self.nombre_bib = nombre_bib
+        self.direccion = direccion
+        self.encargado_bib = encargado_bib
+        self.reg_usuarios = list()
+
+    def agregarUsuario(self, usuario):
+        self.reg_usuarios.append(usuario)
+
+    def totalPrestamos(self):
+        total = 0
+        for usuario in self.reg_usuarios:
+            total += len(usuario.lista_prestamos)
+        return total
+
+    def totalImportePrestamos(self):
+        total = 0
+        for usuario in self.reg_usuarios:
+            total += usuario.totalTarifas()
+        return total
+
+    def __str__(self):
+        return f'Biblioteca -> [Nombre: {self.nombre_bib} Domicilio: {self.direccion} Encargado: {self.encargado_bib}]'
+
+
+def main():
+    os.system('cls')
+
+    print('Inicio del programa en la función main() principal:')
+    print('=' * 90)
+
+    mibiblioteca = Biblioteca(
+        nombre_bib='Biblioteca Magys',
+        direccion='Luis Donaldo Colo, Jerez,Zac',
+        encargado_bib='Ing. Magaly Garcia',
+    )
+
+    mibiblioteca.agregarUsuario(Usuario(uid='USR-2026-X', nombre_usr='Salvador Novo', correo_usr='snovo@cultura.gob.mx', tel_usr='4921112233'))
+    mibiblioteca.agregarUsuario(Usuario(uid='USR-2026-Y', nombre_usr='Amparo Dávila', correo_usr='amparo@unam.mx', tel_usr='4922223344'))
+    mibiblioteca.agregarUsuario(Usuario(uid='USR-2026-Z', nombre_usr='Juan Rulfo', correo_usr='jrulfo@literatura.mx', tel_usr='4923334455'))
+    mibiblioteca.agregarUsuario(Usuario(uid='USR-2026-W', nombre_usr='Elena Garro', correo_usr='egarro@escritores.org', tel_usr='4924445566'))
+
+    mibiblioteca.reg_usuarios[0].agregarPrestamo(Prestamo(titulo_libro='Laberinto de la Soledad', num_dias=6, tarifa_dia=11.50))
+    mibiblioteca.reg_usuarios[0].agregarPrestamo(Prestamo(titulo_libro='Pedro Páramo', num_dias=4, tarifa_dia=14.00))
+
+    mibiblioteca.reg_usuarios[1].agregarPrestamo(Prestamo(titulo_libro='Balún Canán', num_dias=8, tarifa_dia=9.50))
+    mibiblioteca.reg_usuarios[1].agregarPrestamo(Prestamo(titulo_libro='Oficio de Tinieblas', num_dias=5, tarifa_dia=12.00))
+    mibiblioteca.reg_usuarios[1].agregarPrestamo(Prestamo(titulo_libro='Árbol de Literatura', num_dias=3, tarifa_dia=18.00))
+
+    mibiblioteca.reg_usuarios[2].agregarPrestamo(Prestamo(titulo_libro='El Llano en Llamas', num_dias=10, tarifa_dia=7.50))
+
+    print(f'REPORTE DE CONTROL DE PRÉSTAMOS: {mibiblioteca}')
+    print('=' * 90)
+    print(f'Total de usuarios registrados : {len(mibiblioteca.reg_usuarios)}')
+    print(f'Total de préstamos activos : {mibiblioteca.totalPrestamos()}')
+    print('-' * 90)
+
+    print('--- Catálogo de Usuarios Registrados ---')
+    for usuario in mibiblioteca.reg_usuarios:
+        print(usuario)
+
+    print('\n--- Detalle de Préstamos por Lector ---')
+    for usuario in mibiblioteca.reg_usuarios:
+        print(f'{usuario.uid} - {usuario.nombre_usr} | Costo Acumulado del Lector: ${usuario.totalTarifas():,.2f}')
+        for prestamo in usuario.lista_prestamos:
+            print(prestamo)
+
+    print('=' * 90)
+    print(f'IMPORTACIÓN TOTAL RECAUDADA POR LA BIBLIOTECA: ${mibiblioteca.totalImportePrestamos():,.2f}')
+    print('=' * 90)
+
+
+if __name__ == '__main__':
+    main()
