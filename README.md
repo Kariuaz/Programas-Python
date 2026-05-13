@@ -194,3 +194,7 @@ p156-empleado1
 p157-empleado2
 p158-circulo
 p159-rectangulo
+###### Actividad 20
+p160 - ventas
+###### Tarea 9 
+p161-control-libros
